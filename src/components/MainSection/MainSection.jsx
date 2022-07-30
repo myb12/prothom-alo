@@ -18,6 +18,10 @@ const MainSection = () => {
             <div className='main-section'>
                 <div className="left-section">
                     <TabComponent />
+                    <div className="add-mobile">
+                        <h5>বিজ্ঞাপন</h5>
+                        <AdComponent addNumber={1} />
+                    </div>
                 </div>
                 <div className="right-section">
                     <div className="right-middle-section">
@@ -30,8 +34,10 @@ const MainSection = () => {
                         </div>
                     </div>
                     <div className="right-right-section">
-                        <h2>বিজ্ঞাপন</h2>
-                        <AdComponent addNumber={1} />
+                        <div className="add-one-wrapper">
+                            <h2>বিজ্ঞাপন</h2>
+                            <AdComponent addNumber={1} />
+                        </div>
                         {
                             data?.selected?.items?.slice(3).map(el => <RightCard key={el.id} data={el} />)
                         }

@@ -9,8 +9,7 @@ const NewsDetail = () => {
     useEffect(() => {
         const specificNews = newsData && newsData[category].items?.find(el => el.id === +id);
         setNews(specificNews);
-    }, [category, id])
-
+    }, [category, id]);
 
     return (
         <div className="detail-container">

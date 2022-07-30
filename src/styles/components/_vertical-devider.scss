@@ -3,4 +3,9 @@
     width: 1px;
     margin: 0 18px;
     background-color: $color-border;
+
+    @media screen and (max-width: $tablet-device) {
+        margin: 0 8px;
+        background-color: transparent;
+    }
 }

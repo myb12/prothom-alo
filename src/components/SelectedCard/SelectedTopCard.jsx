@@ -4,8 +4,8 @@ import UseNavigateTo from '../../hooks/UseNavigateTo';
 const SelectedTopCard = ({ data }) => {
     const navigateToDetail = UseNavigateTo();
     return (
-        <div className='selected-top-card' onClick={() => navigateToDetail('selected', 5)}>
-            <img className='top-card-image' src={data?.coverPhoto} alt="" />
+        <div className='selected-top-card' onClick={() => navigateToDetail('selected', data?.id)}>
+            <img className='top-card-image' src={data?.thumb} alt="" />
 
             <h3>
                 <span>{data?.subheadline} / </span>{data?.headline}

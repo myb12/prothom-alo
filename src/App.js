@@ -11,10 +11,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
-
           <Route path='/' element={<Home />} />
-
           <Route path='news-detail'>
             <Route path=':category/:id' element={<NewsDetail />} />
           </Route>
@@ -25,13 +22,3 @@ function App() {
 }
 
 export default App;
-
-
-/* 
-https://i.ibb.co/4JCtvvW/side-2.webp
-https://i.ibb.co/0QThWHM/side-3.webp
-https://i.ibb.co/jDKHv2R/top-1.webp
-https://i.ibb.co/RBWD3Jb/top-2.webp
-https://i.ibb.co/xqkvzS7/top-3.webp
-https://i.ibb.co/zN721VV/side-1.webp
-*/

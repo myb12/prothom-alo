@@ -19,6 +19,11 @@
             &:hover {
                 border-bottom: 3px solid $color-primary;
             }
+
+            @media screen and (min-width: ($mobile-device+1)) and (max-width: $tablet-device) {
+
+                font-size: $font-14;
+            }
         }
     }
 

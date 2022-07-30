@@ -4,8 +4,8 @@ import UseNavigateTo from '../../hooks/UseNavigateTo';
 const SelectedSmallCard = ({ data }) => {
     const navigateToDetail = UseNavigateTo();
     return (
-        <div className='selected-small-card' onClick={() => navigateToDetail('selected', 2)}>
-            <img src={data?.coverPhoto} alt="" />
+        <div className='selected-small-card' onClick={() => navigateToDetail('selected', data?.id)}>
+            <img src={data?.thumb} alt="" />
 
             <h3>
                 <span>{data?.subheadline} / </span>{data?.headline}
