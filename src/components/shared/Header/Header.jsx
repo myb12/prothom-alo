@@ -4,8 +4,13 @@ import Logo from '../../../assets/images/logo.svg'
 
 const Header = () => {
     const navigate = useNavigate();
+
+    const handleNavigateToHome = () => {
+        window.scrollTo(0, 0);
+        navigate('/')
+    }
     return (
-        <div className='header' onClick={() => navigate('/')}>
+        <div className='header' onClick={handleNavigateToHome}>
             <img src={Logo} alt="" />
         </div>
     );
