@@ -1,0 +1,19 @@
+.right-card {
+    @extend .selected-small-card;
+    margin: 16px 0px 16px 16px;
+    padding-top: 16px;
+    border-top: $border-primary;
+
+    .right-card-body {
+        @include grid-layout(7fr 5fr, 10px);
+
+        img {
+            height: 100%;
+        }
+
+        h3 {
+            font-size: $font-18;
+            margin-top: 0;
+        }
+    }
+}

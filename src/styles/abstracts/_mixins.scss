@@ -1,7 +1,7 @@
-@mixin grid-layout($columns) {
+@mixin grid-layout($columns, $gap) {
     display: grid;
     grid-template-columns: $columns;
-    grid-row-gap: 10px;
+    grid-column-gap: $gap;
 }
 
 @mixin flex-center {

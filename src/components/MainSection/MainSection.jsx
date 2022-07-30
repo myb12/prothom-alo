@@ -1,4 +1,5 @@
 import React from 'react';
+import RightCard from '../RightCard/RightCard';
 import SelectedSmallCard from '../SelectedCard/SelectedSmallCard';
 import SelectedTopCard from '../SelectedCard/SelectedTopCard';
 import VerticalDevider from '../shared/Devider/VerticalDevider';
@@ -21,7 +22,19 @@ const MainSection = () => {
                         </div>
                     </div>
                     <div className="right-right-section">
-                        Hello World
+                        <div style={{
+                            backgroundColor: "grey",
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            minHeight: 250,
+                            marginLeft: 16
+                        }}>
+                            AD-1
+                        </div>
+                        <RightCard />
+                        <RightCard />
+                        <RightCard />
                     </div>
                 </div>
             </div>

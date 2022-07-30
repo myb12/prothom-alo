@@ -5,9 +5,11 @@
 
 .selected-small-card {
     overflow: hidden;
+    cursor: pointer;
 
     img {
         width: 100%;
+        object-fit: cover;
         transition: $global-transition;
     }
 
