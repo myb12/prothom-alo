@@ -1,9 +1,14 @@
+/* Abstract styles */
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
+/* Base styles */
 @import './base/common';
 
+/* Layout styles */
 @import './layout/header';
 @import './layout/main-section';
 
+/* Component styles */
 @import './components/selected-top-card';
 @import './components/selected-small-card';
