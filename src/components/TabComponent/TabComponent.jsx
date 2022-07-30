@@ -10,6 +10,8 @@ const TabComponent = () => {
         setTabClicked(value)
     }, []);
 
+    // console.log('asdada', data?.latest?.items?.sort((a, b) => a.sort - b.sort))
+
     return (
         <div className='tab-component'>
             <ul>
@@ -36,7 +38,7 @@ const TabComponent = () => {
             {
                 tabClicked === 'latest' && <div className="latest" >
                     {
-                        data?.latest?.items?.map((el, i) => <LeftCard category='latest' key={i} data={el} />)
+                        data?.latest?.items?.sort((a, b) => a.sort - b.sort)?.map((el, i) => <LeftCard category='latest' key={i} data={el} />)
                     }
                 </div>
             }
@@ -44,14 +46,14 @@ const TabComponent = () => {
             {
                 tabClicked === 'mostread' && <div className="most-read" >
                     {
-                        data?.mostread?.items?.map((el, i) => <LeftCard category='mostread' key={i} data={el} />)
+                        data?.mostread?.items?.sort((a, b) => a.sort - b.sort)?.map((el, i) => <LeftCard category='mostread' key={i} data={el} />)
                     }
                 </div>
             }
             {
                 tabClicked === 'discussed' && <div className="discussed" >
                     {
-                        data?.discussed?.items?.map((el, i) => <LeftCard category='discussed' key={i} data={el} />)
+                        data?.discussed?.items?.sort((a, b) => a.sort - b.sort)?.map((el, i) => <LeftCard category='discussed' key={i} data={el} />)
                     }
                 </div>
             }

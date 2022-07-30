@@ -9,9 +9,10 @@ import TabComponent from '../TabComponent/TabComponent';
 
 const MainSection = () => {
     const data = UseData();
-    const selectedTop = data?.selected?.items[0];
-    const selectedSmall1 = data?.selected?.items[1];
-    const selectedSmall = data?.selected?.items[3];
+    const sortedData = data?.selected?.items?.sort((a, b) => a.sort - b.sort);
+    const selectedTop = sortedData && sortedData[0];
+    const selectedSmall1 = sortedData && sortedData[1];
+    const selectedSmall = sortedData && sortedData[2];
 
     return (
         <div className="container">
@@ -39,7 +40,7 @@ const MainSection = () => {
                             <AdComponent addNumber={1} />
                         </div>
                         {
-                            data?.selected?.items?.slice(3).map(el => <RightCard key={el.id} data={el} />)
+                            sortedData?.slice(3).map(el => <RightCard key={el.id} data={el} />)
                         }
                     </div>
                 </div>
