@@ -3,3 +3,23 @@
     grid-template-columns: $columns;
     grid-row-gap: 10px;
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin image-hover($color) {
+    img {
+        transform: scale(1.05);
+    }
+
+    h3 {
+        color: $color;
+
+        span {
+            color: $color;
+        }
+    }
+}

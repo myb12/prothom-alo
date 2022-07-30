@@ -4,13 +4,8 @@
     overflow: hidden;
 
     &:hover {
-        img {
-            transform: scale(1.05);
-        }
 
-        h3 {
-            color: $color-yellow;
-        }
+        @include image-hover($color-secondary);
     }
 
     &::after {
@@ -26,8 +21,7 @@
 
     img {
         width: 100%;
-        cursor: pointer;
-        transition: all 0.1s ease-out;
+        transition: $global-transition;
     }
 
     h3 {
@@ -38,15 +32,10 @@
         font-size: $font-27;
         z-index: 2;
         color: $color-white;
-        transition: all 0.1s ease-out;
+        transition: $global-transition;
 
         span {
-            color: $color-yellow;
-
-            span {
-                position: relative;
-                top: -3px;
-            }
+            color: $color-secondary;
         }
     }
 }

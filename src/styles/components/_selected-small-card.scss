@@ -1,0 +1,36 @@
+.small-card-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.selected-small-card {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        transition: $global-transition;
+    }
+
+    h3 {
+        margin-top: 10px;
+        font-size: $font-20;
+        color: $color-font;
+        text-align: left;
+        transition: $global-transition;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    small {
+        font-size: $font-14;
+        color: $color-light;
+        display: block;
+        text-align: left;
+    }
+
+    &:hover {
+        @include image-hover($color-blue);
+    }
+}
