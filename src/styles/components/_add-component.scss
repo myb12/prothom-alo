@@ -1,0 +1,12 @@
+.add-component {
+    @include flex-center;
+    background-color: $color-lighter;
+    margin-left: 16px;
+    min-height: 250px;
+    color: $color-light;
+    font-size: 40px;
+
+    @media screen and (max-width: $mobile-device) {
+        margin-left: 0;
+    }
+}

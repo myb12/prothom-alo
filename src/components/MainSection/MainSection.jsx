@@ -2,6 +2,7 @@ import React from 'react';
 import RightCard from '../RightCard/RightCard';
 import SelectedSmallCard from '../SelectedCard/SelectedSmallCard';
 import SelectedTopCard from '../SelectedCard/SelectedTopCard';
+import AdComponent from '../shared/AdComponent/AdComponent';
 import VerticalDevider from '../shared/Devider/VerticalDevider';
 
 const MainSection = () => {
@@ -22,21 +23,15 @@ const MainSection = () => {
                         </div>
                     </div>
                     <div className="right-right-section">
-                        <div style={{
-                            backgroundColor: "grey",
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            minHeight: 250,
-                            marginLeft: 16
-                        }}>
-                            AD-1
-                        </div>
+                        <AdComponent addNumber={1} />
                         <RightCard />
                         <RightCard />
                         <RightCard />
                     </div>
                 </div>
+            </div>
+            <div className='add-wrapper'>
+                <AdComponent addNumber={2} />
             </div>
         </div>
     );
