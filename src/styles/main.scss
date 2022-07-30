@@ -1,1 +1,9 @@
+@import './abstracts/variables';
+
+@import './base/common';
+
 @import './layout/header';
+@import './layout/main-section';
+
+@import './components/selected-top-card';
+@import './components/selected-small-card';

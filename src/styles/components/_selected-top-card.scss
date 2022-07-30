@@ -1,0 +1,52 @@
+.selected-top-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+
+        h3 {
+            color: $color-yellow;
+        }
+    }
+
+    &::after {
+        background: linear-gradient(180deg, transparent 10.87%, rgba(0, 0, 0, .6) 53.06%, #000);
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    img {
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+    }
+
+    h3 {
+        padding: 24px;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        font-size: $font-27;
+        z-index: 2;
+        color: $color-white;
+        transition: all 0.1s ease-out;
+
+        span {
+            color: $color-yellow;
+
+            span {
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
