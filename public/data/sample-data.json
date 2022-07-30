@@ -15,7 +15,7 @@
 			{
 				"id": 2,
 				"headline": "আইএমএফের ঋণ কেন লাগছেই",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 1,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -25,7 +25,7 @@
 			{
 				"id": 3,
 				"headline": "সামাজিক যোগাযোগমাধ্যম যেভাবে ‘ভার্চ্যুয়াল ভালোবাসা’কে জনপ্রিয় করে তুলছে",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -45,7 +45,7 @@
 			{
 				"id": 5,
 				"headline": "এদুই সতীর্থ, দুর্লভ মুহূর্ত",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -60,7 +60,7 @@
 			{
 				"id": 6,
 				"headline": "বেয়ারস্টোর ‘চার’ জীবন, ইংল্যান্ডের ছক্কাবৃষ্টি ও প্রোটিয়া ‘সাইক্লোন’",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 1,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -70,7 +70,7 @@
 			{
 				"id": 7,
 				"headline": "দূর দেশের ‘রাজাদের’ যুদ্ধে টেকা দায় গরিবের",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 2,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -80,7 +80,7 @@
 			{
 				"id": 8,
 				"headline": "ইউক্রেনের দ্বিতীয় বৃহত্তম বিদ্যুৎকেন্দ্র এখন রাশিয়ার",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -115,7 +115,7 @@
 			{
 				"id": 11,
 				"headline": "বঙ্গোপসাগরে নিখোঁজ এক জেলের লাশ উদ্ধার, আরেকজনের সন্ধান মেলেনি",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 1,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "",
@@ -125,7 +125,7 @@
 			{
 				"id": 12,
 				"headline": "নিয়ন্ত্রণ হারিয়ে পিকআপ ভ্যান খাদে, প্রাণ হারালেন চালক",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 2,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -135,7 +135,7 @@
 			{
 				"id": 13,
 				"headline": "আমি ভীষণভাবে লজ্জিত ও দুঃখিত: শিক্ষামন্ত্রী",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -170,7 +170,7 @@
 			{
 				"id": 16,
 				"headline": "মাসে ২ হাজার ৪০০ টাকা সম্মানী পান এই শিল্পীরা",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 1,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "",
@@ -180,7 +180,7 @@
 			{
 				"id": 17,
 				"headline": "আমি ভীষণভাবে লজ্জিত ও দুঃখিত: শিক্ষামন্ত্রী",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 2,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -200,7 +200,7 @@
 			{
 				"id": 19,
 				"headline": "দূর দেশের ‘রাজাদের’ যুদ্ধে টেকা দায় গরিবের",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 4,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -210,7 +210,7 @@
 			{
 				"id": 20,
 				"headline": "এবার রাজউক চেয়ারম্যান নিজেই ভবন পরিদর্শনে যাবেন",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",
@@ -220,7 +220,7 @@
 			{
 				"id": 21,
 				"headline": "বিশ্বে প্রেসিডেন্ট পদে আছেন যে নারীরা",
-				"subheadline": "",
+				"subheadline": "মতামত",
 				"sort": 5,
 				"thumb": "https://dummyimage.com/580x340/000/fff",
 				"cover-photo": "https://dummyimage.com/964x540/000/fff",

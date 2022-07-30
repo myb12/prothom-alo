@@ -32,7 +32,7 @@ const TabComponent = () => {
             {
                 tabClicked === 'mostRead' && <div className="most-read" >
                     {
-                        [...new Array(5)].map((el, i) => <LeftCard />)
+                        [...new Array(5)].map((el, i) => <LeftCard key={i} id={i + 1} />)
                     }
                 </div>
             }

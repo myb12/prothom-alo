@@ -53,6 +53,18 @@
 .right-right-section {
     border-left: $border-primary;
     margin-top: 50px;
+    position: relative;
+
+    h2 {
+        font-size: $font-20;
+        font-weight: $font-bold;
+        text-align: left;
+        margin-bottom: 16px;
+        margin-top: 0;
+        margin-left: 16px;
+        position: absolute;
+        top: -40px;
+    }
 }
 
 .add-wrapper {

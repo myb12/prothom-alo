@@ -15,7 +15,7 @@ const MainSection = () => {
                 </div>
                 <div className="right-section">
                     <div className="right-middle-section">
-                        <h2>নির্বাচিত</h2>
+                        <h2 className='mini-heading'>নির্বাচিত</h2>
                         <SelectedTopCard />
                         <div className='small-card-wrapper'>
                             <SelectedSmallCard />
@@ -24,6 +24,7 @@ const MainSection = () => {
                         </div>
                     </div>
                     <div className="right-right-section">
+                        <h2>বিজ্ঞাপন</h2>
                         <AdComponent addNumber={1} />
                         <RightCard />
                         <RightCard />

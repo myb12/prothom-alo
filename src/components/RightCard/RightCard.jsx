@@ -1,8 +1,10 @@
 import React from 'react';
+import UseNavigateTo from '../../hooks/UseNavigateTo';
 
 const RightCard = () => {
+    const navigateToDetail = UseNavigateTo();
     return (
-        <div className='right-card'>
+        <div className='right-card' onClick={() => navigateToDetail(1)}>
             <div className='right-card-body'>
                 <h3>
                     <span>পিনাটস ৩৬০ / </span> প্রথম বিশ্বযুদ্ধের ঝানু বৈমানিক
