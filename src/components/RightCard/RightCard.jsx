@@ -4,7 +4,7 @@ import UseNavigateTo from '../../hooks/UseNavigateTo';
 const RightCard = ({ data }) => {
     const navigateToDetail = UseNavigateTo();
     return (
-        <div className='right-card' onClick={() => navigateToDetail('selected', 1)}>
+        <div className='right-card' onClick={() => navigateToDetail('selected', data?.id)}>
             <div className='right-card-body'>
                 <h3>
                     <span>{data?.subheadline} / </span> {data?.headline}
