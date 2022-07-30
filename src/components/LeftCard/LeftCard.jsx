@@ -1,16 +1,16 @@
 import React from 'react';
 import UseNavigateTo from '../../hooks/UseNavigateTo';
 
-const LeftCard = ({ id }) => {
+const LeftCard = ({ data, category }) => {
+    const { id, serial, subheadline, headline } = data;
 
     const navigateToDetail = UseNavigateTo();
     return (
-        <div className='left-card' onClick={() => navigateToDetail(id)}>
-            <h1>১</h1>
-
+        <div className='left-card' onClick={() => navigateToDetail(category, id)}>
+            <h1>{serial}</h1>
             <h3>
-                <span>মিরসরাইয়ে দুর্ঘটনা / </span>
-                যেভাবে বেঁচে গেলেন জুনায়েদ ও অন্যরা
+                <span>{subheadline} / </span>
+                {headline}
             </h3>
         </div>
     );

@@ -1,51 +1,61 @@
 import React, { useCallback, useState } from 'react';
+import UseData from '../../hooks/UseData';
 import LeftCard from '../LeftCard/LeftCard';
 
 const TabComponent = () => {
-    const [tabClicked, setTabClicked] = useState('mostRead');
+    const [tabClicked, setTabClicked] = useState('latest');
+    const data = UseData();
 
     const handleTabClick = useCallback((value) => {
         setTabClicked(value)
-    }, [])
+    }, []);
+
     return (
         <div className='tab-component'>
             <ul>
                 <li
-                    className={`${tabClicked === 'mostRead' ? 'tab-border' : ''}`}
-                    onClick={() => handleTabClick('mostRead')}>
-                    পঠিত
+                    className={`${tabClicked === 'latest' ? 'tab-border' : ''}`}
+                    onClick={() => handleTabClick('latest')}>
+                    {data?.latest?.name}
+                </li>
+
+                <li
+                    className={`${tabClicked === 'mostread' ? 'tab-border' : ''}`}
+                    onClick={() => handleTabClick('mostread')}>
+                    {data?.mostread?.name}
                 </li>
 
                 <li
                     className={`${tabClicked === 'discussed' ? 'tab-border' : ''}`}
                     onClick={() => handleTabClick('discussed')}>
-                    আলোচিত
+                    {data?.discussed?.name}
                 </li>
 
-                <li
-                    className={`${tabClicked === 'goodNews' ? 'tab-border' : ''}`}
-                    onClick={() => handleTabClick('goodNews')}>
-                    সুখবর
-                </li>
             </ul>
 
             {
-                tabClicked === 'mostRead' && <div className="most-read" >
+                tabClicked === 'latest' && <div className="latest" >
                     {
-                        [...new Array(5)].map((el, i) => <LeftCard key={i} id={i + 1} />)
+                        data?.latest?.items?.map((el, i) => <LeftCard category='latest' key={i} data={el} />)
+                    }
+                </div>
+            }
+
+            {
+                tabClicked === 'mostread' && <div className="most-read" >
+                    {
+                        data?.mostread?.items?.map((el, i) => <LeftCard category='mostread' key={i} data={el} />)
                     }
                 </div>
             }
             {
                 tabClicked === 'discussed' && <div className="discussed" >
-                    discussed
+                    {
+                        data?.discussed?.items?.map((el, i) => <LeftCard category='discussed' key={i} data={el} />)
+                    }
                 </div>
             }
-            {
-                tabClicked === 'goodNews' && <div className="good-news" >
-                    Good news
-                </div>
-            }
+
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import UseData from '../../hooks/UseData';
 import RightCard from '../RightCard/RightCard';
 import SelectedSmallCard from '../SelectedCard/SelectedSmallCard';
 import SelectedTopCard from '../SelectedCard/SelectedTopCard';
@@ -7,6 +8,11 @@ import VerticalDevider from '../shared/Devider/VerticalDevider';
 import TabComponent from '../TabComponent/TabComponent';
 
 const MainSection = () => {
+    const data = UseData();
+    const selectedTop = data?.selected?.items[0];
+    const selectedSmall1 = data?.selected?.items[1];
+    const selectedSmall = data?.selected?.items[3];
+
     return (
         <div className="container">
             <div className='main-section'>
@@ -16,19 +22,19 @@ const MainSection = () => {
                 <div className="right-section">
                     <div className="right-middle-section">
                         <h2 className='mini-heading'>নির্বাচিত</h2>
-                        <SelectedTopCard />
+                        <SelectedTopCard data={selectedTop} />
                         <div className='small-card-wrapper'>
-                            <SelectedSmallCard />
+                            <SelectedSmallCard data={selectedSmall1} />
                             <VerticalDevider />
-                            <SelectedSmallCard />
+                            <SelectedSmallCard data={selectedSmall} />
                         </div>
                     </div>
                     <div className="right-right-section">
                         <h2>বিজ্ঞাপন</h2>
                         <AdComponent addNumber={1} />
-                        <RightCard />
-                        <RightCard />
-                        <RightCard />
+                        {
+                            data?.selected?.items?.slice(3).map(el => <RightCard key={el.id} data={el} />)
+                        }
                     </div>
                 </div>
             </div>

@@ -9,10 +9,10 @@
 
         li {
             list-style: none;
-            margin-right: 16px;
+            margin-right: 8px;
             cursor: pointer;
-            padding-bottom: 8px;
-            color: $color-font;
+            padding: 8px;
+            color: $color-grey;
             font-size: $font-18;
             font-weight: $font-bold;
 
@@ -24,5 +24,6 @@
 
     .tab-border {
         border-bottom: 3px solid $color-primary;
+        background-color: $color-lighter;
     }
 }

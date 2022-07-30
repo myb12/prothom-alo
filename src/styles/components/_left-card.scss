@@ -20,4 +20,8 @@
         }
 
     }
+
+    &:hover {
+        @include image-hover($color-blue);
+    }
 }
