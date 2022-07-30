@@ -4,6 +4,18 @@
     padding-top: 16px;
     border-top: $border-primary;
 
+    small {
+        @media screen and (max-width: $mobile-device) {
+            position: relative;
+            top: 0;
+        }
+
+        @media screen and (min-width: ($mobile-device+1)) and (max-width: $tablet-device) {
+            position: relative;
+            top: -30px;
+        }
+    }
+
     .right-card-body {
         @include grid-layout(7fr 5fr, 10px);
 

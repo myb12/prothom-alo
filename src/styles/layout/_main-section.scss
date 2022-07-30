@@ -40,6 +40,8 @@
     }
 
     .left-section {
+        margin-top: -8px;
+
         @media screen and (min-width: ($mobile-device+1)) and (max-width: $tablet-device) {
             padding-right: 4px;
         }

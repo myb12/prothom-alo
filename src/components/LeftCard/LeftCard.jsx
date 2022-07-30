@@ -7,7 +7,7 @@ const LeftCard = ({ data, category }) => {
     const navigateToDetail = UseNavigateTo();
     return (
         <div className='left-card' onClick={() => navigateToDetail(category, id)}>
-            <h1>{serial}</h1>
+            <h4>{serial}</h4>
             <h3>
                 <span>{subheadline} / </span>
                 {headline}

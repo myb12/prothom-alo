@@ -10,8 +10,6 @@ const SelectedSmallCard = ({ data }) => {
             <h3>
                 <span>{data?.subheadline} / </span>{data?.headline}
             </h3>
-
-            <small>{data?.duration} ঘণ্টা আগে</small>
         </div>
     );
 };
