@@ -4,13 +4,14 @@ import SelectedSmallCard from '../SelectedCard/SelectedSmallCard';
 import SelectedTopCard from '../SelectedCard/SelectedTopCard';
 import AdComponent from '../shared/AdComponent/AdComponent';
 import VerticalDevider from '../shared/Devider/VerticalDevider';
+import TabComponent from '../TabComponent/TabComponent';
 
 const MainSection = () => {
     return (
         <div className="container">
             <div className='main-section'>
                 <div className="left-section">
-                    Hello World
+                    <TabComponent />
                 </div>
                 <div className="right-section">
                     <div className="right-middle-section">

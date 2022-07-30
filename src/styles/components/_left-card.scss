@@ -1,1 +1,23 @@
-.left-card {}
+.left-card {
+
+    border-top: $border-primary;
+
+    h1 {
+        color: $color-grey;
+        font-size: $font-32;
+        font-weight: $font-bold;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: $font-18;
+        color: $color-font;
+        text-align: left;
+
+        span {
+            color: $color-primary;
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+.tab-component {
+
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        display: flex;
+
+        li {
+            list-style: none;
+            margin-right: 16px;
+            cursor: pointer;
+            padding-bottom: 8px;
+            color: $color-font;
+            font-size: $font-18;
+            font-weight: $font-bold;
+
+            &:hover {
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+
+    .tab-border {
+        border-bottom: 3px solid $color-primary;
+    }
+}
