@@ -7,7 +7,7 @@ const RightCard = ({ data }) => {
         <div className='right-card' onClick={() => navigateToDetail('selected', 1)}>
             <div className='right-card-body'>
                 <h3>
-                    <span>{data?.subheadline} / </span> প্রথম বিশ্বযুদ্ধের ঝানু বৈমানিক
+                    <span>{data?.subheadline} / </span> {data?.headline}
                 </h3>
                 <img src={data?.coverPhoto} alt="" />
             </div>
