@@ -10,7 +10,6 @@ const TabComponent = () => {
         setTabClicked(value)
     }, []);
 
-    // console.log('asdada', data?.latest?.items?.sort((a, b) => a.sort - b.sort))
 
     return (
         <div className='tab-component'>

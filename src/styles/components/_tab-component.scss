@@ -27,6 +27,14 @@
         }
     }
 
+    .latest,
+    .most-read,
+    .discussed {
+        @media screen and (max-width: $mobile-device) {
+            margin-top: -10px;
+        }
+    }
+
     .tab-border {
         border-bottom: 3px solid $color-primary;
         background-color: $color-lighter;
