@@ -14,7 +14,7 @@
 * SCSS 
 
 
-## Screenshots of code
+## Screenshots
 
 ![hompage_screenshot](https://i.ibb.co/MSfdFn9/hompage.png)
 ![detailpage_screenshot](https://i.ibb.co/GJLdkDz/detailpage.png)
