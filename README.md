@@ -1,4 +1,4 @@
-# Dummy Facebook app built as a task given by Tier5
+# Simple news portal hompage built as a task given by Prothom Alo
 
 ## Live-link: https://prothom-alo.netlify.app/
 ## Source code: https://github.com/myb12/prothom-alo
